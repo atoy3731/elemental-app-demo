@@ -4,8 +4,8 @@ metadata:
   name: elemental-shared-apps
   namespace: fleet-default
 spec:
-  repo: git@github.com:atoy3731/elemental-app-demo-private.git
-  branch: self-signed
+  repo: git@github.com:atoy3731/elemental-app-demo.git
+  branch: main
   clientSecretName: private-key
   targets:
   - name: elemental

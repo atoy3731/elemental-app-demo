@@ -4,8 +4,8 @@ metadata:
   name: elemental-gitea-cluster
   namespace: fleet-local
 spec:
-  repo: git@github.com:atoy3731/elemental-app-demo-private.git
-  branch: self-signed
+  repo: git@github.com:atoy3731/elemental-app-demo.git
+  branch: main
   clientSecretName: private-key
   targets:
   - clusterSelector:
