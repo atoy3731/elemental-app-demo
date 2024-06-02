@@ -7,3 +7,8 @@ helm:
 
 labels:
   app: elemental-kube-vip
+
+dependsOn:
+- selector:
+    matchLabels:
+      app: elemental-kubevip-cloud-provider-config
