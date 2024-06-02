@@ -1,0 +1,19 @@
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: elemental-harbor-cluster
+  namespace: fleet-local
+spec:
+  repo: git@github.com:atoy3731/elemental-app-demo-private.git
+  branch: self-signed
+  clientSecretName: private-key
+  targets:
+  - clusterSelector:
+      matchExpressions:
+      - key: provider.cattle.io
+        operator: NotIn
+        values:
+        - harvester
+  paths:
+  # Harbor Elemental Cluster
+  - "./infra/harbor-cluster"
