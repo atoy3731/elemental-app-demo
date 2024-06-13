@@ -1,7 +1,7 @@
 defaultNamespace: default
 helm:
   # chart: https://github.com/rancherfederal/rancher-cluster-templates/releases/download/rancher-cluster-templates-0.5.1/rancher-cluster-templates-0.5.1.tgz
-  chart: git::https://github.com/atoy3731/rancher-cluster-templates.git//charts/cluster-templates?ref=additional-manifest-support
+  chart: git::https://github.com/rancherfederal/rancher-cluster-templates.git//charts/cluster-templates?ref=main
   releaseName: elemental-harbor-cluster
   valuesFiles:
     - values.yaml
